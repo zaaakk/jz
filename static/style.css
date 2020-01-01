@@ -1,0 +1,149 @@
+@font-face {
+  font-family: Apoc;
+  src: url(AT Apoc.ttf);
+}
+
+@font-face {
+  font-family: ApocDark;
+  src: url(AT Apoc Dark.ttf);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 50px 25px;
+    background: #ededed;
+    color: #125926;
+}
+
+
+a {
+    color: #125926;
+    font-family: 'Apoc', sans-serif;
+}
+
+ img {
+    max-width:470px;
+  }
+
+a:hover {
+    color: #33bbdf;
+}
+
+header {
+    margin-left:0;
+    margin-top: 0px;
+    max-width:700px;
+    width: 92%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top:1%;
+    left:2%;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /*overflow-y:scroll;*/
+    padding-top: 0px; /* Place content 60px from the top */
+    
+    vertical-align:baseline;
+}
+
+/*header, footer, div.page {
+    width: 760px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}*/
+
+header h1 {
+        font-family: 'Apoc', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 8px 0 0;
+    padding: 0;
+}
+
+div.page {
+  margin-left:20%;
+
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+ 
+  text-decoration: underline;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+text-decoration: underline;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 1100px) {
+  .page{
+    margin-top:40%;
+    margin-left:0% !important;
+  }
+
+  img {
+    width:100%;
+    max-width: 100%;
+  }
+
+  header {
+    width:100%;
+    max-width:100%;
+  }
+
+  header h1 {
+    font-size:3.6em;
+  }
+  .sidebar {
+    font-size:3.6em;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/*@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }*/
+}

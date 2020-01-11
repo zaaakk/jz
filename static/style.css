@@ -75,7 +75,7 @@ header nav ul li {
 
 div.page {
   margin-left:20%;
-    max-width:800px;
+    max-width:1100px;
       min-height: 600px;
 
 }
@@ -116,13 +116,13 @@ div.content {
 
 .slick-prev:before {
   content: "<";
-
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.24);
   font-size: 30px;
 }
 
 .slick-next:before {
   content: ">";
- 
+ text-shadow: 2px 2px 2px rgba(0,0,0,0.24);
   font-size: 30px;
 }
 .slick-next:before{
@@ -165,10 +165,10 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .project img {
-    max-width:250px;
+    max-width:350px;
      height: auto;
     width: auto;
-    max-height: 250px;
+    max-height: 350px;
 }
 
 .project > .title {
@@ -180,16 +180,27 @@ figcaption > h3 > a{
     text-decoration: none;
 }
 
+footer {
+  float:right;
+  font-size:12px;
+}
+
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
 
-     .container {
-        display: flex;
-        justify-content: center;
-        flex-basis: 51%;
-    }
+nav > div > ul {
+  min-height:60px;
+  font-size:24px;
+
+}
+
+nav > div > ul > li > a {
+  margin-left:10px;
+text-shadow: 2px 2px 2px rgba(0,0,0,0.24);
+}
 
 .project img{
+  min-width:100%;
     max-width: 100%;
     max-height:100%;
 }
@@ -198,6 +209,10 @@ figcaption > h3 > a{
     margin-top:40%;
     margin-left:0% !important;
 
+  }
+
+  div.project {
+    min-width:100%;
   }
 
   img {
@@ -211,10 +226,10 @@ figcaption > h3 > a{
   }
 
   header h1 {
-    font-size:3.6em;
+
   }
   .sidebar {
-    font-size:3.6em;
+  
     width: 100%;
     height: auto;
     position: relative;

@@ -1,10 +1,19 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../static/style.css">
-<title>Up up n away (2019) — Jacquelin Zazueta Portfolio</title>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<script 
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<title>Up up n away (2019)</title>
+
 <body>
   <header>
     <h1>Jacquelin Zazueta</h1>
+    <br>
     <nav>
       <div class="sidebar">
       <ul class="nav navbar-nav">
@@ -27,18 +36,32 @@
   </header>
   <div class="page">
     
+<script>
+$(document).ready(function(){
+  $('.slideshow').slick({
+  });
+  $(".slick-next").text("");
+  $(".slick-prev").text("");
+  $("#slick-images").slick({
+    nextArrow: '<i class="icon fa-arrow-right nextArrowBtn"></i>',
+    prevArrow: '<i class="icon fa-arrow-left prevArrowBtn"></i>'
+});
+});
+</script>
   <div class="main" style="margin-top:60px;">
-  <h1>Up up n away</h1>
+  <h3>Up up n away</h3>
   <dl>
   </dl>
   <div class="description"><p></p></div>
   
   
+  <div class="slideshow">
     
       <div class="image">
         <img src="../../projects/up_up_n_away/up_up_n_away@640.jpg" alt="">
       </div>
     
+  </div>
   
   </div>
 
@@ -46,4 +69,5 @@
   <footer>
     &copy; Copyright 2019 by Jacquelin Zazueta.
   </footer>
+
 </body>

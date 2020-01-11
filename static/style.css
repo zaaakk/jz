@@ -22,7 +22,8 @@ a {
 }
 
  img {
-    max-width:470px;
+    max-width:600px;
+    max-height:600px;
   }
 
 a:hover {
@@ -74,12 +75,14 @@ header nav ul li {
 
 div.page {
   margin-left:20%;
+    max-width:800px;
+      min-height: 600px;
 
 }
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 200px; 
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -88,7 +91,7 @@ div.page {
 /* Sidebar links */
 .sidebar a {
   display: block;
-  padding: 16px;
+  padding: 5px;
   text-decoration: none;
 }
 
@@ -108,13 +111,93 @@ div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
+
+}
+
+.slick-prev:before {
+  content: "<";
+
+  font-size: 30px;
+}
+
+.slick-next:before {
+  content: ">";
+ 
+  font-size: 30px;
+}
+.slick-next:before{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    right: 0%;
+}
+.slick-prev:before{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 0;
+}
+
+.slick-slide img {
+  margin-left:auto;
+  margin-right:auto;
+  }
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.container {
+  display: flex; /* or inline-flex */
+  flex-wrap: wrap;
+}
+
+.project {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+}
+
+.project img {
+    max-width:250px;
+     height: auto;
+    width: auto;
+    max-height: 250px;
+}
+
+.project > .title {
+  display:block;
+
+}
+
+figcaption > h3 > a{
+    text-decoration: none;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 700px) {
+
+     .container {
+        display: flex;
+        justify-content: center;
+        flex-basis: 51%;
+    }
+
+.project img{
+    max-width: 100%;
+    max-height:100%;
+}
+
   .page{
     margin-top:40%;
     margin-left:0% !important;
+
   }
 
   img {

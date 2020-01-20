@@ -7,8 +7,16 @@
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
+  <script>
+function unScramble(eMail1,eMail2,linkText,subjectText,statusText){
+var a,b,c,d,e;a=eMail1;c=linkText;b=eMail2.substring(0,eMail2.length-5);
+if(subjectText!=""){d="?subject="+escape(subjectText);}else{d="";}
+if(statusText!=""){e=" onMouseOver=\"top.status=\'"+statusText+
+"\'\;return true\;\" onMouseOut=\"top.status=\'\'\;return true\;\"";}else{e="";}
+document.write("<A HREF=\"mai"+"lto:"+a+"@"+b+d+"\""+e+">"+c+"</A>");}
+</script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<title>MNP (2019)</title>
+<title>Middle of El Centro (2019)</title>
 
 <body>
   <header>
@@ -28,7 +36,7 @@
         
           <li><a href="../../about/">About</a></li>
         
-          <li><a href="../../contact">Contact</a></li>
+          <li><a href="../../contact/">Contact</a></li>
         
       </ul>
     </div>
@@ -49,19 +57,12 @@ $(document).ready(function(){
 });
 </script>
   <div class="main" style="margin-top:60px;">
-  <h3>MNP</h3>
+  <h3>Middle of El Centro</h3>
   <dl>
   </dl>
-  <div class="description"><p></p></div>
+  <div class="description"><p><p><iframe src="https://player.vimeo.com/video/312859212" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
+</p></div>
   
-  
-  <div class="slideshow">
-    
-      <div class="image">
-        <img src="../../projects/mnp/mnp@640.jpeg" alt="">
-      </div>
-    
-  </div>
   
   </div>
 

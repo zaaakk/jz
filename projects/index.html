@@ -7,6 +7,14 @@
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
+  <script>
+function unScramble(eMail1,eMail2,linkText,subjectText,statusText){
+var a,b,c,d,e;a=eMail1;c=linkText;b=eMail2.substring(0,eMail2.length-5);
+if(subjectText!=""){d="?subject="+escape(subjectText);}else{d="";}
+if(statusText!=""){e=" onMouseOver=\"top.status=\'"+statusText+
+"\'\;return true\;\" onMouseOut=\"top.status=\'\'\;return true\;\"";}else{e="";}
+document.write("<A HREF=\"mai"+"lto:"+a+"@"+b+d+"\""+e+">"+c+"</A>");}
+</script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <title>Projects</title>
 
@@ -28,7 +36,7 @@
         
           <li><a href="../about/">About</a></li>
         
-          <li><a href="../contact">Contact</a></li>
+          <li><a href="../contact/">Contact</a></li>
         
       </ul>
     </div>
@@ -53,7 +61,7 @@
   
     <li><a href="../projects/pastelito-de-love/">Pastelito de Love</a></li>
   
-    <li><a href="../projects/2018-2020/">2018-2020</a></li>
+    <li><a href="../projects/2018-2020/">2019-2020</a></li>
   
     <li><a href="../projects/angelito_caballito/">Angelito Caballito</a></li>
   
@@ -63,9 +71,25 @@
   
     <li><a href="../projects/Cuentos_de_cueva/">Cuentos de Cueva</a></li>
   
-    <li><a href="../projects/mnp/">MNP</a></li>
+    <li><a href="../projects/unexpected-lamb/">Unexpected Lamb</a></li>
+  
+    <li><a href="../projects/middle-of-el-centro/">Middle of El Centro</a></li>
+  
+    <li><a href="../projects/ottawad/">Ottawa&#39;d</a></li>
   
     <li><a href="../projects/holy-holy-holy/">Holy Holy Holy</a></li>
+  
+    <li><a href="../projects/say-goodbye/">Say Goodbye</a></li>
+  
+    <li><a href="../projects/bear-rug/">Bear Rug</a></li>
+  
+    <li><a href="../projects/mira-3am/">mira @ 3am</a></li>
+  
+    <li><a href="../projects/groove/">Groove</a></li>
+  
+    <li><a href="../projects/clementina/">Clementina</a></li>
+  
+    <li><a href="../projects/rat-dreams/">Rat Dreams</a></li>
   
   </ul>
 

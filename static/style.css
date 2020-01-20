@@ -1,11 +1,13 @@
+/*remember to change these when this site gets a domain:*/
+
 @font-face {
   font-family: Apoc;
-  src: url(AT Apoc.ttf);
+  src: url(zaaakk.github.io/jz/static/AT Apoc Dark.ttf);
 }
 
 @font-face {
   font-family: ApocDark;
-  src: url(AT Apoc Dark.ttf);
+  src: url(zaaakk.github.io/jz/static/AT Apoc Dark.ttf);
 }
 
 body {
@@ -85,7 +87,6 @@ div.page {
   margin: 0;
   padding: 0;
   width: 200px; 
-  position: fixed;
   height: 100%;
   overflow: auto;
 }
@@ -192,7 +193,7 @@ footer {
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px), and (-webkit-min-device-pixel-ratio: 1) {
 
   #splash {
   margin-left:0%;
@@ -234,7 +235,7 @@ text-shadow: 2px 2px 2px rgba(0,0,0,0.24);
     width:100%;
     max-width:100%;
   }
-  
+
   .sidebar {
   
     width: 100%;

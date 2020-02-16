@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: Apoc;
-  src: url('zaaakk.github.io/jz/static/AT Apoc Dark.ttf');
+  src: url(https://github.com/zaaakk/jz/blob/master/static/AT%20Apoc%20Dark.ttf?raw=true);
 }
 
 @font-face {
   font-family: ApocDark;
-  src: url('zaaakk.github.io/jz/static/AT Apoc Dark.ttf');
+  src: url(https://github.com/zaaakk/jz/blob/master/static/AT%20Apoc%20Dark.ttf?raw=true);
 }
 
 body {

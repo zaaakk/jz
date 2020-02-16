@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: Apoc;
-  src: url(zaaakk.github.io/jz/static/AT Apoc Dark.ttf);
+  src: url('zaaakk.github.io/jz/static/AT Apoc Dark.ttf');
 }
 
 @font-face {
   font-family: ApocDark;
-  src: url(zaaakk.github.io/jz/static/AT Apoc Dark.ttf);
+  src: url('zaaakk.github.io/jz/static/AT Apoc Dark.ttf');
 }
 
 body {
@@ -17,7 +17,18 @@ body {
     color: #125926;
 }
 
+h2{
+   font-family: 'Apoc', sans-serif;
+}
 
+#pagetitle{
+  width:100%;
+}
+
+#series {
+  margin:auto;
+  width:200px;
+}
 a {
     color: #125926;
     font-family: 'Apoc', sans-serif;
